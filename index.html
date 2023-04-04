@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+  <title>News homepage</title>
+</head> 
+<body>
+  <div class="header">
+    <div class="container">
+      <div class="navbar-all">
+        <div class="logo-image">
+          <a href="./assets/images/logo.svg"><img src="./assets/images/logo.svg" alt="logo-icon"></a>
+        </div>
+        <div class="navbar-list" id="nav-list">
+          <div class="navbar-item"><a href="#">Home</a> </div>
+          <div class="navbar-item"><a href="#">New</a> </div>
+          <div class="navbar-item"><a href="#">Popular</a> </div>
+          <div class="navbar-item"><a href="#">Trending</a> </div>
+          <div class="navbar-item"><a href="#">Categories</a> </div>
+        </div>
+        <div class="hamburger-menu"> 
+          <img src="./assets/images/icon-menu.svg" onclick="showlist()" alt="open" class="open" id="open">
+          <img src="./assets/images/icon-menu-close.svg" onclick="hidelist()" alt="close" class="close" id="close">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="main-body">
+    <div class="container">
+      <div class="contents">
+        <div class="content-1">
+          <a href="./assets/images/image-web-3-desktop.jpg"><img src="./assets/images/image-web-3-desktop.jpg" alt=""></a>
+        </div>
+        <div class="content-2">
+          <h2>New</h2>
+          <div class="side-bar bar-1">
+            <a href="#">
+              <h3>Hydrogen VS Electric Cars</h3>
+            </a>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p> 
+          </div>
+          <div class="side-bar bar-2">
+            <a href="#">
+              <h3>The Downsides of AI Artistry</h3>
+            </a>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p> 
+          </div>
+          <div class="side-bar bar-3">
+            <a href="#">
+              <h3>Is VC Funding Drying Up?</h3> 
+            </a>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>   
+          </div>
+        </div>
+        <div class="content-3">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="content-4">
+          <p>  We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+            But is it really fulfilling its promise?</p>
+          <button>Read more</button>
+        </div>
+        <div class="content-5">
+          <div class="list-image">
+            <a href="./assets/images/image-retro-pcs.jpg"><img src="./assets/images/image-retro-pcs.jpg" alt="Retro PCs"></a>
+          </div>
+          <div class="list-text">
+            <h3>
+              01
+            </h3>
+            <h4>
+              Reviving Retro PC
+            </h4>
+            <p>
+              What happens when old PCs are given modern upgrades?
+            </p>
+          </div>
+        </div>
+        <div class="content-6">
+          <div class="list-image">
+            <a href="./assets/images/image-top-laptops.jpg"><img src="./assets/images/image-top-laptops.jpg" alt="Laptop keyboard"></a>
+          </div>
+          <div class="list-text">
+            <h3>
+              02
+            </h3>
+            <h4>
+              Top 10 Laptops of 2022
+            </h4>
+            <p>
+              Our best picks for various needs and budgets.
+            </p>
+          </div>
+        </div>
+        <div class="content-7">
+          <div class="list-image">
+            <a href="./assets/images/image-gaming-growth.jpg"><img src="./assets/images/image-gaming-growth.jpg" alt="Gaming console"></a>
+          </div>          
+          <div class="list-text">
+            <h3>
+              03
+            </h3>
+            <h4>
+              The Growth of Gaming
+            </h4>
+            <p>
+              How the pandemic has sparked fresh opportunities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Kapil Chaulagain</a>.
+  </div>
+  <script>
+    const menu=document.getElementById("nav-list");
+    const open=document.getElementById("open");
+    const close=document.getElementById("close");
+    function showlist(){
+      menu.style.display = "flex";
+      close.style.display = "block";
+      open.style.display = "none";
+    }
+    function hidelist(){
+      menu.style.display = "none";
+      close.style.display = "none";
+      open.style.display = "block";
+    }
+  </script>
+</body>
+</html>
